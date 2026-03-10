@@ -1,0 +1,36 @@
+{
+  "name": "Pavalasri K",
+  "role": "MCA Student | Data Enthusiast",
+  "about": "Passionate about data analytics and building data-driven solutions.",
+  "skills": [
+    "Python",
+    "Java",
+    "SQL",
+    "Data Structures",
+    "Object-Oriented Programming",
+    "Git",
+    "GitHub",
+    "Docker",
+    "MySQL",
+    "Firebase"
+  ],
+  "experience": [
+    {
+      "company": "Corizo",
+      "role": "Data Science Intern",
+      "duration": "Aug 2025 – Sep 2025",
+      "description": "Worked on data processing workflows and analyzed datasets."
+    }
+  ],
+  "projects": [
+    {
+      "title": "SmartShop Insights",
+      "description": "A system to analyze customer purchase data and generate insights using Python."
+    }
+  ],
+  "contact": {
+    "email": "pavalasrikannan0005@gmail.com",
+    "linkedin": "https://linkedin.com/in/pavalasri-k-636aa6254",
+    "github": "https://github.com/Pavalasri"
+  }
+}
