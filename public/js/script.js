@@ -77,3 +77,32 @@ window.addEventListener('scroll', () => {
         navbar.style.background = 'rgba(1, 28, 64, 0.9)';
     }
 });
+
+const form = document.getElementById("contactForm");
+
+form.addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const name = form.name.value;
+    const email = form.email.value;
+    const message = form.message.value;
+
+    const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            name,
+            email,
+            message
+        })
+    });
+
+    const data = await response.json();
+
+    document.getElementById("formMessage").textContent = data.message;
+
+    form.reset();
+});
+

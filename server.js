@@ -5,6 +5,7 @@ const app = express();
 const PORT = 3000;
 
 app.use(express.static("public"));
+app.use(express.json());
 
 app.get("/api/profile", (req, res) => {
 
@@ -16,6 +17,22 @@ app.get("/api/profile", (req, res) => {
             res.json(data);
         }
 
+    });
+
+});
+
+app.post("/api/contact", (req, res) => {
+
+    const { name, email, message } = req.body;
+
+    console.log("New Contact Message:");
+    console.log("Name:", name);
+    console.log("Email:", email);
+    console.log("Message:", message);
+    console.log("----------------------------");
+
+    res.json({
+        message: "Message sent successfully!"
     });
 
 });
